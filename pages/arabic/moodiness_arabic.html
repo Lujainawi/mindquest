@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تقلبات في المزاج</title>
+    <link rel="stylesheet" href="/styles/pages.css" />
+  </head>
+  <body>
+    <div class="language-switch">
+      <a href="/pages/hebrew/moodiness_hebrew.html">עברית 🇮🇱</a>
+    </div>
+    <div class="container">
+      <h1>ليه مزاجي بيتغير بسرعة؟ مرة بضحك ومرة بزعل 🌟</h1>
+
+      <p>
+        أوقات بنحس حالنا ملخبطين... نضحك بلحظة، ونزعل باللي بعدها بدون سبب واضح.
+      </p>
+
+      <h2>ليش منحس هيك؟</h2>
+      <p>
+        التغيرات بالهورمونات، والتوتر، وتقلب المشاعر هي أمور طبيعية جدًا
+        بهالعمر.
+      </p>
+
+      <h2>شو ممكن نعمل؟ 💡</h2>
+      <ul>
+        <li class="tip" onclick="toggleTip('t1')">📕 مراقبة المشاعر</li>
+        <li class="tip" onclick="toggleTip('t2')">⛹️ رياضة</li>
+        <li class="tip" onclick="toggleTip('t3')">🧑‍🧳 نوم وغذاء</li>
+        <li class="tip" onclick="toggleTip('t4')">🌿 الطف</li>
+        <li class="tip" onclick="toggleTip('t5')">✍️ أكتب عن حالي</li>
+        <li class="tip" onclick="toggleTip('t6')">🎧 أسمع موسيقى بحبها</li>
+        <li class="tip" onclick="toggleTip('t7')">🚶‍♀️ أطلع أمشي برا</li>
+        <li class="tip" onclick="toggleTip('t8')">💬 أحكي مع حدا بحبه</li>
+        <li class="tip" onclick="toggleTip('t9')">🏠 رتب غرفتي</li>
+      </ul>
+
+      <div id="t1" class="tip-text">
+        اكتبي كيف بتحسي كل يوم. هذا بيساعدك تفهمي النمط.
+      </div>
+      <div id="t2" class="tip-text">الرياضة تفرغ الطاقة وتخلي مزاجك أفضل.</div>
+      <div id="t3" class="tip-text">
+        النوم الكويس والغذاء الصحي بيأثروا على المشاعر.
+      </div>
+      <div id="t4" class="tip-text">
+        عاملي حالك بلطف وبدون قسوة. كلنا منمر بمراحل متقلبة، وهذا طبيعي.
+      </div>
+      <div id="t5" class="tip-text">
+        جرّبي تكتبي شو عم بتحسي بدون تفكير كتير. الكتابة بتساعدك تطلعي المشاعر
+        لبرا.
+      </div>
+      <div id="t6" class="tip-text">
+        الموسيقى اللي بتحبيها ممكن تهدي أعصابك وتغير جوّك.
+      </div>
+      <div id="t7" class="tip-text">
+        المشي بالهوا الطلق بساعد على تصفية الذهن وتحسين المزاج.
+      </div>
+      <div id="t8" class="tip-text">
+        احكي مع شخص بترتاحي له – مجرد الكلام ممكن يخفف عنك.
+      </div>
+      <div id="t9" class="tip-text">
+        ترتيب الغرفة بيساعد تشعري بنظام وهدوء حواليك.
+      </div>
+
+      <img
+        src="/assets/images/moodiness_img.png"
+        class="brain-image"
+        alt="تقلبات المزاج"
+      />
+
+      <h2>🎥 رابط مفيد:</h2>
+      <p>
+        <a
+          href="https://www.youtube.com/watch?v=3Nf2Pzcketg"
+          target="_blank"
+          rel="noopener"
+          >فيديو بيساعد كيف تعتني بحالك لما تتعبي نفسيًا او تحسي حالك مش
+          مرتاحة</a
+        >
+      </p>
+
+      <button
+        class="audio-button"
+        onclick="document.getElementById('relaxAudio').play()"
+      >
+        🎵 لحظة استرخاء لألك
+      </button>
+      <audio
+        id="relaxAudio"
+        src="/assets/audio/arabic/moodiness_arabic.ogg"
+      ></audio>
+
+      <div class="game-question">
+        <p>حاسّة اليوم إنك مش مرتاحة؟ أو مش مفهومة حتى لنفسك؟</p>
+        <button onclick="alert('هذا الشي بيخليكي إنسانة حقيقية وعفوية. 😊')">
+          نعم
+        </button>
+        <button onclick="alert('التقلب أحياناً بيخلي الحياة أكثر حيوية.')">
+          احيانا
+        </button>
+      </div>
+
+      <p class="quote">
+        ✨ كل شعور بيمر، ودايمًا في طريق ترجعلك البسمة. إنتِ أقوى مما بتتصوري ❤️
+      </p>
+
+      <a href="/brain_page.html" class="button">رجوع إلى الدماغ 🧠</a>
+    </div>
+
+    <script>
+      function toggleTip(id) {
+        document.querySelectorAll(".tip-text").forEach((el) => {
+          el.classList.remove("show");
+        });
+
+        const el = document.getElementById(id);
+        if (!el.classList.contains("show")) {
+          el.classList.add("show");
+        }
+      }
+    </script>
+  </body>
+</html>

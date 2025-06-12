@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>التعب المستمر</title>
+    <link rel="stylesheet" href="/styles/pages.css" />
+  </head>
+  <body>
+    <div class="language-switch">
+      <a href="/pages/hebrew/tiredness_hebrew.html">עברית 🇮🇱</a>
+    </div>
+
+    <div class="container">
+      <h1>ليش بحس تعبانة دايماً؟ حتى من أشياء بسيطة؟ 😴</h1>
+
+      <p>
+        مرات نفيق والنشاط مش موجود... كأنني تعبانة بنفسيتي وبجسمي. مش عارفة ليش.
+      </p>
+      <p>
+        <strong
+          >إذا كنتِ حاسّة بالتعب المستمر – حتى بدون سبب واضح – فإنتي مش لحالك.
+          الشعور هذا حقيقي ومفهوم. 💗</strong
+        >
+      </p>
+
+      <h2>ليش ممكن يصير هيك؟</h2>
+      <p>
+        التعب النفسي والعاطفي ممكن يظهر كتعب جسدي. الضغط المستمر، قلة النوم،
+        والتردد الدائم بخلونا منهكات.
+      </p>
+
+      <h2>شو ممكن نعمل؟ 💡</h2>
+      <ul>
+        <li class="tip" onclick="toggleTip('t1')">🌸 نوم منظم</li>
+        <li class="tip" onclick="toggleTip('t2')">🙏 راحة نفسية</li>
+        <li class="tip" onclick="toggleTip('t3')">🏋️‍♀️ حركة خفيفة</li>
+        <li class="tip" onclick="toggleTip('t4')">☕ استراحة ولينك</li>
+        <li class="tip" onclick="toggleTip('t5')">🥗 تغذية لطيفة</li>
+      </ul>
+
+      <div id="t1" class="tip-text">
+        جربي تنامي 7-8 ساعات بنفس الوقت كل يوم.
+      </div>
+      <div id="t2" class="tip-text">
+        الكلام مع صديقة والكتابة بيريحوا على النفس.
+      </div>
+      <div id="t3" class="tip-text">مشي سريع لو لفتين باليوم بينشط الجسم.</div>
+      <div id="t4" class="tip-text">ساوي إشي تحبيه ولو دقيقين كل يوم.</div>
+      <div id="t5" class="tip-text">
+        أوقات بيكون التعب نابع من نقص فيتامينات أو تغذية غير منتظمة. اهتمي بجسمك
+        من جوّا.
+      </div>
+
+      <p>
+        <strong
+          >✨ لو حسّيتي تعب، اعرفي إن جسمك ونفسيتك عم بيحكوا معاكي. اسمعيهم
+          بلطف.</strong
+        >
+      </p>
+
+      <img
+        src="/assets/images/tiredness_img.png"
+        class="brain-image"
+        alt="رسم تعبيري عن التعب"
+      />
+
+      <h2>🎥 رابط قد يفيدك:</h2>
+      <p>
+        <a
+          href="https://youtu.be/zu1_2zvIokQ?si=SgOf-Q0kMGkB5C2z"
+          target="_blank"
+          rel="noopener"
+        >
+          🎥 فيديو قصير (بالإنجليزية) بيوضح أهم الأسباب اللي ممكن تخلينا نحس
+          بتعب مستمر – جسدياً ونفسياً.
+        </a>
+      </p>
+
+      <button
+        class="audio-button"
+        onclick="document.getElementById('relaxAudio').play()"
+      >
+        🎵 استمعي لراحة قصيرة
+      </button>
+      <audio
+        id="relaxAudio"
+        src="/assets/audio/arabic/tiredness_arabic.ogg"
+      ></audio>
+
+      <div class="game-question">
+        <p>حسيتي تعب مستمر من غير سبب واضح؟</p>
+        <button onclick="alert('الإرهاق النفسي شي شائع... انتي قوية! 💕')">
+          نعم
+        </button>
+        <button onclick="alert('منيح! واذا شعرتي يوماً - خدي راحتك ولا تكتمي')">
+          احيانا
+        </button>
+      </div>
+
+      <p class="quote">
+        كل شعور له معنى. تعبك محسوس ومهم ومش مجرد كسل. احترمي احساسك. 🌸
+      </p>
+
+      <a href="/brain_page.html" class="button">رجوع إلى الدماغ 🧠</a>
+    </div>
+
+    <script>
+      function toggleTip(id) {
+        document.querySelectorAll(".tip-text").forEach((el) => {
+          el.classList.remove("show");
+        });
+
+        const el = document.getElementById(id);
+        if (!el.classList.contains("show")) {
+          el.classList.add("show");
+        }
+      }
+    </script>
+  </body>
+</html>

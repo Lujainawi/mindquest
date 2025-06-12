@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>עייפות מתמשכת</title>
+    <link rel="stylesheet" href="/styles/pages.css" />
+  </head>
+  <body>
+    <div class="language-switch">
+      <a href="/pages/arabic/tiredness_arabic.html">العربية 🇵🇸</a>
+    </div>
+
+    <div class="container">
+      <h1>למה אני תמיד מרגישה עייפה? אפילו מדברים קטנים? 😴</h1>
+
+      <p>
+        לפעמים אני קמה בלי כוח, מרגישה מותשת בגוף ובנפש... ולא תמיד ברורה לי
+        הסיבה.
+      </p>
+      <p>
+        <strong
+          >אם את מרגישה עייפות קבועה – גם בלי סיבה ברורה – את לא לבד. זה לגמרי
+          אמיתי ומובן 💗</strong
+        >
+      </p>
+
+      <h2>למה זה קורה לפעמים?</h2>
+      <p>
+        עייפות רגשית ונפשית יכולה להתבטא גם בגוף. עומס נפשי, חוסר שינה,
+        התלבטויות אינסופיות – כל אלה שואבים אנרגיה.
+      </p>
+
+      <h2>מה אפשר לעשות? 💡</h2>
+      <ul>
+        <li class="tip" onclick="toggleTip('t1')">🌸 שינה מסודרת</li>
+        <li class="tip" onclick="toggleTip('t2')">🙏 רגיעה לנפש</li>
+        <li class="tip" onclick="toggleTip('t3')">🏃‍♀️ תנועה עדינה</li>
+        <li class="tip" onclick="toggleTip('t4')">☕ הפסקה ולינק קטן</li>
+        <li class="tip" onclick="toggleTip('t5')">🥗 תזונה נעימה</li>
+      </ul>
+
+      <div id="t1" class="tip-text">
+        נסי לישון 7–8 שעות בכל לילה, בשעות קבועות.
+      </div>
+      <div id="t2" class="tip-text">
+        לשתף מישהי ולכתוב ביומן – יכול להקל על הלב.
+      </div>
+      <div id="t3" class="tip-text">
+        הליכה קצרה פעמיים ביום יכולה להחזיר לך אנרגיה.
+      </div>
+      <div id="t4" class="tip-text">
+        קחי 2 דקות לדברים קטנים שאת אוהבת – זה עושה פלאים.
+      </div>
+      <div id="t5" class="tip-text">
+        לפעמים הגוף עייף כי חסר לו ויטמינים או אוכל טוב. תני לו אהבה מבפנים.
+      </div>
+      <p>
+        <strong
+          >✨ כשאת מרגישה עייפות – הגוף שלך מדבר איתך. נסי להקשיב לו
+          בעדינות.</strong
+        >
+      </p>
+
+      <img
+        src="/assets/images/tiredness_img.png"
+        class="brain-image"
+        alt="איור על עייפות"
+      />
+
+      <h2>🎥 אולי יעניין אותך:</h2>
+      <p>
+        <a
+          href="https://youtu.be/zu1_2zvIokQ?si=SgOf-Q0kMGkB5C2z"
+          target="_blank"
+          rel="noopener"
+        >
+          🎥 סרטון קצר (באנגלית) שמסביר למה אנחנו מרגישות עייפות – בגוף ובנפש –
+          ואיך אפשר להבין את זה טוב יותר.
+        </a>
+      </p>
+
+      <button
+        class="audio-button"
+        onclick="document.getElementById('relaxAudio').play()"
+      >
+        🎵 האזיני לדקה של מנוחה
+      </button>
+      <audio
+        id="relaxAudio"
+        src="/assets/audio/hebrew/tiredness_hebrew.ogg"
+      ></audio>
+
+      <div class="game-question">
+        <p>הרגשת לאחרונה עייפות מתמשכת בלי סיבה ברורה?</p>
+        <button onclick="alert('עייפות נפשית זה משהו נפוץ – את חזקה! 💕')">
+          כן
+        </button>
+        <button
+          onclick="alert('יופי! ואם תרגישי יום אחד – תני לעצמך מנוחה 💛')"
+        >
+          לפעמים
+        </button>
+      </div>
+
+      <p class="quote">
+        כל רגש הוא משמעותי. העייפות שלך אמיתית וחשובה – זה ממש לא עצלנות.<br />
+        תתייחסי לעצמך ברוך. 🌸
+      </p>
+
+      <a href="/brain_page.html" class="button">חזרה אל המוח 🧠</a>
+    </div>
+
+    <script>
+      function toggleTip(id) {
+        document.querySelectorAll(".tip-text").forEach((el) => {
+          el.classList.remove("show");
+        });
+
+        const el = document.getElementById(id);
+        if (!el.classList.contains("show")) {
+          el.classList.add("show");
+        }
+      }
+    </script>
+  </body>
+</html>

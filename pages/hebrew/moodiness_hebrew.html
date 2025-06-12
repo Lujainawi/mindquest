@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>שינויים במצב הרוח</title>
+    <link rel="stylesheet" href="/styles/pages.css" />
+  </head>
+  <body>
+    <div class="language-switch">
+      <a href="/pages/arabic/moodiness_arabic.html">العربية 🇵🇸</a>
+    </div>
+    <div class="container">
+      <h1>
+        למה מצב הרוח שלי משתנה כל כך מהר? פעם אני צוחקת, ופעם בא לי לבכות 🌟
+      </h1>
+
+      <p>
+        לפעמים מרגישים מבולבלים... רגע אחד צוחקים, וברגע הבא נעלבים בלי סיבה
+        ברורה.
+      </p>
+
+      <h2>למה זה קורה לי?</h2>
+      <p>
+        שינויים הורמונליים, לחץ רגשי, ותנודות במצב הרוח – כל אלה נורמליים לגמרי
+        בגיל הזה.
+      </p>
+
+      <h2>מה אפשר לעשות? 💡</h2>
+      <ul>
+        <li class="tip" onclick="toggleTip('t1')">📕 מעקב רגשות</li>
+        <li class="tip" onclick="toggleTip('t2')">⛹️ פעילות גופנית</li>
+        <li class="tip" onclick="toggleTip('t3')">🧑‍🧳 שינה ותזונה</li>
+        <li class="tip" onclick="toggleTip('t4')">🌿 להיות עדינה עם עצמי</li>
+        <li class="tip" onclick="toggleTip('t5')">✍️ כתיבה אישית</li>
+        <li class="tip" onclick="toggleTip('t6')">🎧 מוזיקה שאני אוהבת</li>
+        <li class="tip" onclick="toggleTip('t7')">🚶‍♀️ לצאת להליכה</li>
+        <li class="tip" onclick="toggleTip('t8')">💬 לשתף מישהי קרובה</li>
+        <li class="tip" onclick="toggleTip('t9')">🏠 לסדר את החדר</li>
+      </ul>
+
+      <div id="t1" class="tip-text">
+        כתבי איך את מרגישה כל יום – זה יעזור לך לזהות דפוסים.
+      </div>
+      <div id="t2" class="tip-text">
+        ספורט עוזר לשחרר אנרגיה ולשפר את מצב הרוח.
+      </div>
+      <div id="t3" class="tip-text">
+        שינה טובה ותזונה נכונה משפיעות מאוד על התחושות.
+      </div>
+      <div id="t4" class="tip-text">
+        תהיי עדינה עם עצמך. כולן עוברות תקופות כאלה – זה טבעי.
+      </div>
+      <div id="t5" class="tip-text">
+        נסי לכתוב בלי שיפוט. רק תכתבי מה עובר עלייך. זה משחרר.
+      </div>
+      <div id="t6" class="tip-text">
+        שירי רקע שאת אוהבת יכולים להרגיע ולעודד.
+      </div>
+      <div id="t7" class="tip-text">
+        הליכה באוויר הפתוח מרגיעה ועוזרת לחשוב.
+      </div>
+      <div id="t8" class="tip-text">
+        שיחה עם מישהי שאת סומכת עליה – יכולה להקל ממש.
+      </div>
+      <div id="t9" class="tip-text">
+        חדר מסודר עוזר להרגיש שליטה וניקיון גם בפנים.
+      </div>
+
+      <img
+        src="/assets/images/moodiness_img.png"
+        class="brain-image"
+        alt="שינויים במצב הרוח"
+      />
+
+      <h2>🎥 סרטון מומלץ:</h2>
+      <p>
+        <a
+          href="https://www.youtube.com/watch?v=3Nf2Pzcketg"
+          target="_blank"
+          rel="noopener"
+        >
+          סרטון שיעזור לך לטפל בעצמך כשאת מרגישה מוצפת או מבולבלת רגשית
+        </a>
+      </p>
+
+      <button
+        class="audio-button"
+        onclick="document.getElementById('relaxAudio').play()"
+      >
+        🎵 רגע של רוגע בשבילך
+      </button>
+      <audio
+        id="relaxAudio"
+        src="/assets/audio/hebrew/moodiness_hebrew.ogg"
+      ></audio>
+
+      <div class="game-question">
+        <p>מרגישה שהיום את קצת לא את?</p>
+        <button onclick="alert('זה אומר שאת אמיתית ומרגישה – וזה דבר יפה 😊')">
+          כן
+        </button>
+        <button onclick="alert('לפעמים דווקא השינויים הם שמוסיפים צבע לחיים.')">
+          לפעמים
+        </button>
+      </div>
+
+      <p class="quote">
+        ✨ כל רגש עובר. תמיד אפשר למצוא דרך לחזור לחיוך שלך. את חזקה ומדהימה ❤️
+      </p>
+
+      <a href="/brain_page.html" class="button">חזרה למפת המוח 🧠</a>
+    </div>
+
+    <script>
+      function toggleTip(id) {
+        document.querySelectorAll(".tip-text").forEach((el) => {
+          el.classList.remove("show");
+        });
+
+        const el = document.getElementById(id);
+        if (!el.classList.contains("show")) {
+          el.classList.add("show");
+        }
+      }
+    </script>
+  </body>
+</html>

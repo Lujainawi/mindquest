@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>הערכה עצמית ודימוי גוף</title>
+    <link rel="stylesheet" href="/styles/pages.css" />
+  </head>
+  <body>
+    <div class="language-switch">
+      <a href="/pages/arabic/selfesteem_arabic.html">العربية 🇵🇸</a>
+    </div>
+
+    <div class="container">
+      <h1>למה אני מרגישה שאני לא מספיק יפה? שכולן סביבי נראות טוב יותר? 🪞</h1>
+
+      <p>
+        <strong
+          >אם הסתכלת במראה וחשבת שאת לא "מספיקה" – תזכרי: היופי שלך הוא לא רק
+          חיצוני, ואת ממש לא לבד בתחושה הזו 💗</strong
+        >
+      </p>
+
+      <p>
+        לפעמים אנחנו מסתכלות במראה ולא מרוצות ממה שאנחנו רואות. משוות את עצמנו
+        לאחרות וחושבות: "היא נראית טוב יותר... ואני לא?"
+      </p>
+
+      <h2>למה זה קורה לנו?</h2>
+      <p>
+        רשתות חברתיות ותמונות ערוכות יוצרות תחושת לחץ לעמוד ב"אידיאל יופי"
+        מסוים. אבל האמת היא שאין דבר כזה שלמות. היופי הוא במה שעושה אותך שונה.
+      </p>
+
+      <h2>מה אפשר לעשות? 💡</h2>
+      <ul>
+        <li class="tip" onclick="toggleTip('t1')">🌸 כתבי תכונות יפות בעצמך</li>
+        <li class="tip" onclick="toggleTip('t2')">🫻 עשיי משהו שאת אוהבת</li>
+        <li class="tip" onclick="toggleTip('t3')">💜 דברי עם חברה</li>
+        <li class="tip" onclick="toggleTip('t4')">👁️ שנו את הזווית</li>
+        <li class="tip" onclick="toggleTip('t5')">🧼 סנני תכנים שמלחיצים</li>
+      </ul>
+
+      <div id="t1" class="tip-text">
+        כתבי גם על האישיות שלך – הלב, האומץ, הרגישות, השמחה שבך.
+      </div>
+      <div id="t2" class="tip-text">
+        לעשות דברים שעושים לך טוב מזכיר לך כמה את שווה גם בלי קשר למראה.
+      </div>
+      <div id="t3" class="tip-text">
+        לפעמים חברה טובה יכולה לשקף לך כמה את אהובה ומיוחדת.
+      </div>
+      <div id="t4" class="tip-text">
+        כתבי רשימה של דברים שאת כן אוהבת בעצמך – גם אם זה רק דבר אחד קטן.
+      </div>
+      <div id="t5" class="tip-text">
+        עקבי אחרי תכנים שמחזקים אותך – ותתרחקי ממה שגורם לך להרגיש פחות.
+      </div>
+
+      <p>
+        <strong
+          >✨ את לא צריכה להיראות כמו אף אחת. השוני שלך – הוא הקסם שלך
+          🌟</strong
+        >
+      </p>
+
+      <img
+        src="/assets/images/selfesteem_img.png"
+        class="brain-image"
+        alt="איור על דימוי גוף והערכה עצמית"
+      />
+
+      <h2>🎥 סרטון שיכול לעזור:</h2>
+      <p>
+        <a
+          href="https://youtu.be/59_bivNDtLg?si=hSnMYgAX-tyxYXMi"
+          target="_blank"
+          rel="noopener"
+        >
+          🎥 סרטון קצר (באנגלית) על איך לפתח הערכה עצמית ולהרגיש טוב עם עצמנו.
+        </a>
+      </p>
+
+      <button
+        class="audio-button"
+        onclick="document.getElementById('relaxAudio').play()"
+      >
+        🎵 הקשיבי לדקה של שקט
+      </button>
+      <audio
+        id="relaxAudio"
+        src="/assets/audio/hebrew/selfsteam_hebrew.ogg"
+      ></audio>
+
+      <div class="game-question">
+        <p>קרה לך שהרגשת לא שלמה עם איך שאת נראית?</p>
+        <button onclick="alert('את ממש לא לבד... כולנו מרגישות ככה לפעמים 💕')">
+          כן
+        </button>
+        <button onclick="alert('נהדר! ואם כן יקרה – תדעי שאת שווה גם ככה 💛')">
+          לא ממש
+        </button>
+      </div>
+
+      <p class="quote">
+        את לא צריכה להיראות כמו אף אחת אחרת כדי להיות יפה. היופי שלך – הוא מי
+        שאת! 🌺
+      </p>
+
+      <a href="/brain_page.html" class="button">חזרה אל המוח 🧠</a>
+    </div>
+
+    <script>
+      function toggleTip(id) {
+        document.querySelectorAll(".tip-text").forEach((el) => {
+          el.classList.remove("show");
+        });
+
+        const el = document.getElementById(id);
+        if (!el.classList.contains("show")) {
+          el.classList.add("show");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>עומס מחשבתי</title>
+    <link rel="stylesheet" href="/styles/pages.css" />
+  </head>
+  <body>
+    <div class="language-switch">
+      <a href="/pages/arabic/overthinking_arabic.html">العربية 🇵🇸</a>
+    </div>
+
+    <div class="container">
+      <h1>למה אני חושבת על כל פרט קטן? למה הראש לא מפסיק? 🤯</h1>
+
+      <p>
+        <strong>
+          אם הראש שלך עובד שעות נוספות, וכל מחשבה מתגלגלת בלי הפסקה – את לא לבד.
+          זה קורה להרבה מאיתנו, וזה בסדר לנוח. 💗
+        </strong>
+      </p>
+
+      <p>
+        לפעמים מרגיש לי שאני חושבת על כל דבר… כל דבר! אפילו דברים קטנים ממשיכים
+        להסתובב לי בראש. למה זה קורה?
+      </p>
+
+      <h2>למה זה קורה לנו?</h2>
+      <p>
+        כשאנחנו בלחץ, או מפחדות לטעות, המוח מנסה לנתח כל דבר לעומק. לפעמים אנחנו
+        מרגישות שזה מגן עלינו – אבל בפועל זה מתיש אותנו יותר.
+      </p>
+
+      <h2>מה אפשר לעשות? 💡</h2>
+      <ul>
+        <li class="tip" onclick="toggleTip('t1')">📝 כתיבה</li>
+        <li class="tip" onclick="toggleTip('t2')">🌬️ נשימה</li>
+        <li class="tip" onclick="toggleTip('t3')">🗣️ שיחה</li>
+        <li class="tip" onclick="toggleTip('t4')">⏳ זמן</li>
+        <li class="tip" onclick="toggleTip('t5')">🚶‍♀️ תנועה עדינה</li>
+      </ul>
+
+      <div id="t1" class="tip-text">
+        נסי לכתוב כל מה שעל הלב – בלי סדר, בלי הגיון, פשוט לזרוק על הדף.
+      </div>
+      <div id="t2" class="tip-text">
+        קחי נשימה עמוקה ל־4 שניות, החזיקי ל־4, ושחררי ב־4. וחוזר חלילה.
+      </div>
+      <div id="t3" class="tip-text">
+        תדברי עם מישהי – לא חשוב מה תגידי, רק תני לזה לצאת.
+      </div>
+      <div id="t4" class="tip-text">
+        תזכירי לעצמך: לא כל דבר חייב להיפתר עכשיו. דברים מתבהרים עם הזמן.
+      </div>
+      <div id="t5" class="tip-text">
+        קומי לעשות משהו קטן עם הגוף – סיבוב בחוץ, שטיפת פנים או סידור קטן – זה
+        עוזר לעצור את המערבולת.
+      </div>
+
+      <p>
+        <strong>
+          ✨ אם הראש עובד בלי הפסקה – אולי הוא רק מבקש רגע שקט. תקשיבי לו
+          בעדינות.
+        </strong>
+      </p>
+
+      <img
+        src="/assets/images/overthinking_img.png"
+        class="brain-image"
+        alt="איור של עומס מחשבתי"
+      />
+
+      <h2>🎥 אולי יעניין אותך:</h2>
+      <p>
+        <a
+          href="https://www.youtube.com/watch?v=H_l6AV6KfO4"
+          target="_blank"
+          rel="noopener"
+        >
+          🎥 סרטון קצר (באנגלית) עם טכניקות פשוטות להרגיע את הראש.
+        </a>
+      </p>
+
+      <button
+        class="audio-button"
+        onclick="document.getElementById('relaxAudio').play()"
+      >
+        🎧 הקשיבי לדקה של שקט
+      </button>
+      <audio
+        id="relaxAudio"
+        src="/assets/audio/hebrew/overthinking_hebrew.ogg"
+      ></audio>
+
+      <div class="game-question">
+        <p>קרה לך שחשבת בלי סוף ביומיים האחרונים?</p>
+        <button
+          onclick="alert('עומס מחשבתי הוא לא חולשה – זו רק בקשה למנוחה. את חזקה! 💛')"
+        >
+          כן
+        </button>
+        <button onclick="alert('נפלא! ואם זה יקרה – תזכרי לנשום ולעצור ✨')">
+          לא ממש
+        </button>
+      </div>
+
+      <p class="quote">
+        כל מחשבה תחלוף, כל רגש משתנה. קחי אוויר... את חזקה יותר מהבלגן שבראש 🌸
+      </p>
+
+      <a href="/brain_page.html" class="button">חזרה למוח 🧠</a>
+    </div>
+
+    <script>
+      function toggleTip(id) {
+        document.querySelectorAll(".tip-text").forEach((el) => {
+          el.classList.remove("show");
+        });
+
+        const el = document.getElementById(id);
+        if (!el.classList.contains("show")) {
+          el.classList.add("show");
+        }
+      }
+    </script>
+  </body>
+</html>

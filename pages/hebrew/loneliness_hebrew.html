@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>תחושת בדידות</title>
+    <link rel="stylesheet" href="/styles/pages.css" />
+  </head>
+  <body>
+    <div class="language-switch">
+      <a href="/pages/arabic/loneliness_arabic.html">العربية 🇵🇸</a>
+    </div>
+
+    <div class="container">
+      <h1>💭 אני נמצאת עם אנשים – אבל מרגישה לא מובנת... זה נורמלי? 😶‍🌫️</h1>
+
+      <p>
+        לפעמים אני בתוך קבוצה – ועדיין מרגישה לבד... כאילו אף אחד לא ממש מבין
+        אותי.
+      </p>
+
+      <h2>למה אני מרגישה ככה?</h2>
+      <p>
+        לפעמים אנחנו מוקפות באנשים – אבל אין קשר אמיתי. אולי אנחנו פוחדות לשתף,
+        או מרגישות שלא יקשיבו. הבדידות לא תמיד באה מחוסר אנשים – לפעמים זו תחושת
+        חוסר הבנה.
+      </p>
+
+      <h2>מה יכול לעזור? 💡</h2>
+      <ul>
+        <li class="tip" onclick="toggleTip('t1')">📝 לכתוב</li>
+        <li class="tip" onclick="toggleTip('t2')">🌿 ליצור קשר</li>
+        <li class="tip" onclick="toggleTip('t3')">😊 רגעים קטנים</li>
+        <li class="tip" onclick="toggleTip('t4')">🌺 זמן לעצמי</li>
+        <li class="tip" onclick="toggleTip('t5')">👂 להקשיב לעצמי</li>
+      </ul>
+
+      <div id="t1" class="tip-text">
+        כתיבה על מה שאת מרגישה יכולה לעזור לך לסדר את המחשבות ולהבין את עצמך טוב
+        יותר.
+      </div>
+      <div id="t2" class="tip-text">
+        חפשי מישהי שאת סומכת עליה – אפילו רק משפט אחד יכול להיות התחלה.
+      </div>
+      <div id="t3" class="tip-text">
+        רגעים קטנים – כמו חיוך, הודעה מחברה, או שיחה אמיתית – יכולים לשנות את
+        היום.
+      </div>
+      <div id="t4" class="tip-text">
+        עשי משהו שאת אוהבת – ספר, מוזיקה, או טיול – וזכרי כמה את שווה.
+      </div>
+      <div id="t5" class="tip-text">
+        קחי רגע להרגיש מה עובר עלייך בלי לשפוט – רק להקשיב. לפעמים זה כל מה
+        שצריך.
+      </div>
+
+      <p>
+        <strong
+          >🎯 נסי היום לכתוב רגש אחד או לשתף מישהי – צעד קטן עושה הבדל
+          גדול.</strong
+        >
+      </p>
+
+      <img
+        src="/assets/images/loneliness_img.png"
+        class="brain-image"
+        alt="איור על תחושת בדידות"
+        style="animation: fadeIn 1.5s ease"
+      />
+
+      <h2>🎥 אולי תאהבי:</h2>
+      <p>
+        <a href="https://www.youtube.com/watch?v=TWNL7EClClo" target="_blank">
+          🎥 סרטון פשוט (באנגלית) שמסביר למה אנחנו לפעמים מרגישים בודדות, ואיך
+          אפשר להתמודד עם זה בצורה בריאה ועדינה.
+        </a>
+      </p>
+
+      <button
+        class="audio-button"
+        onclick="document.getElementById('relaxAudio').play()"
+      >
+        🎵 דקה של רוגע
+      </button>
+      <audio
+        id="relaxAudio"
+        src="/assets/audio/hebrew/loneliness_hebrew.ogg"
+      ></audio>
+
+      <div class="game-question">
+        <p>הרגשת לאחרונה קצת לבד?</p>
+        <button onclick="alert('את לא לבד – הרבה נערות מרגישות ככה לפעמים 💕')">
+          כן
+        </button>
+        <button
+          onclick="alert('איזה יופי! תמיד תמשיכי לשים לב לאנשים סביבך 🙏')"
+        >
+          לא ממש
+        </button>
+      </div>
+
+      <p class="quote">
+        ✨ הרגשות שלך אמיתיים וחשובים. גם אם קשה להסביר אותם – הם אמיתיים ❤️<br />
+        🌸 גם לבד יש קול – לפעמים הוא רק מחכה שמישהי תאזין לו.
+      </p>
+
+      <a href="/brain_page.html" class="button">חזרה למפת המוח 🧠</a>
+    </div>
+
+    <script>
+      function toggleTip(id) {
+        document.querySelectorAll(".tip-text").forEach((el) => {
+          el.classList.remove("show");
+        });
+
+        const el = document.getElementById(id);
+        if (!el.classList.contains("show")) {
+          el.classList.add("show");
+        }
+      }
+    </script>
+  </body>
+</html>
